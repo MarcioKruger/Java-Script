@@ -7,7 +7,7 @@
  aluno('Márcio', 98)
 
 function aluno2(nome2,nota2){
-    this.nome1=nome2
+    this.nome2=nome2
     this.nota2=nota2
 
     this.dados_arrow=function(){
@@ -19,4 +19,4 @@ function aluno2(nome2,nota2){
     
 }
 const al2=new aluno2('Kruger', 11)
-
+al2.dados_arrow()
