@@ -62,7 +62,7 @@ button{
     width: 25px;
     cursor: pointer;
 }
-.caixaFuncionalidades{
+.caixaNovoFuncionalidades{
     display: flex;
     flex-direction: column;
     justify-content: center;
