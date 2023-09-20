@@ -25,10 +25,16 @@ cursos.map((el,chave)=>{
 })
 
 btnCursoSelecionado.addEventListener("click",(evt)=>{
-    const todosRadios=document.querySelectorAll("input[type=radio]")
-    const radioSelecionado=todosRadios.filter((el)=>{
-        return el.checked
+    const todosRadios=[...document.querySelectorAll("input[type=radio]")]
+    let radioSelecionado=todosRadios.filter((ele)=>{
+        return ele.checked
+        
     })
-    console.log(todosRadios)
-    console.log(radioSelecionado)
+    
+    radioSelecionado=radioSelecionado[0]
+    const cursoSelecionado=radioSelecionado.parentNode.parentNode.firstChild.textContent
+    alert("Curso Selecionado: " + cursoSelecionado)
+    // console.log(todosRadios)
+    // console.log(radioSelecionado)
+    // console.log(cursoSelecionado)
 })
